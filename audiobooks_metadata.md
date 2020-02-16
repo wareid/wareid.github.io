@@ -14,10 +14,10 @@ This best practices guide will explain some of the requirements of the format, a
 The Audiobooks standard is flexible, but does have a handful of required fields. These ensure that user agents and reading systems are able to recognize and validate incoming content correctly.
 
 Four fields are specified as *required*:
-	- `conformsTo`
-	- `@context`
-	- `name`
-	- `readingOrder`
+* `conformsTo`
+* `@context`
+* `name`
+* `readingOrder`
 
 The first two fields, for a valid audiobook, will always remain the same. These fields are used to determine what type of content it is, and what a user agent should use to validate that the content is what it claims to be. In your internal metadata, these fields can be part of a template, as they will not change from audiobook to audiobook.
 
@@ -117,7 +117,7 @@ This book has parts and chapters within those parts. In this case it’s best to
 
 As seen in the examples, there’s 4 main fields recommended for each chapter item, `name` for identification, `url` to know where the content is, `encodingFormat` for the user agent to know what the content type is, and `duration` for calculating the length of the content. These 4 fields are easy to track in spreadsheets or other methods for managing metadata.
 
-The order and relationship of items is declared by their order in the `readingOrder`. If a chapter or part is located at the beginning of the audiobook, it needs to be in the beginning of the `readingOrder`. There is not a field for "order" because the order is derived by the position of the item in the overall order. 
+The order and relationship of items is declared by their order in the `readingOrder`. If a chapter or part is located at the beginning of the audiobook, it needs to be in the beginning of the `readingOrder`. There is not a field for "order" because the order is derived by the position of the item in the overall order.
 
 ## Resources
 In the [Audiobooks](https://www.w3.org/TR/audiobooks/) manifest there is a third section that is not mandatory, but most content creators will end up using, and this is the `resources` section. The purpose of `resources` is to store any non-audio content that is required for the audiobook, like cover images, table of contents, or supplemental content. Referencing this content is almost identical to the reading order, but this content will not appear in the reading order itself (there is one exception to this which I will explain in a later section).
@@ -169,17 +169,17 @@ We built the specification around a few major principles, the most important of 
 When building your audiobooks, be it in this format or in a more general way for multiple distributors, consider how your data is structured, do you have all of the applicable information, and if not, how to get it.
 
 In the first section we listed the required metadata for every audiobook:
-	- `conformsTo`
-	- `context`
-	- `name`
-	- `readingOrder`
+* `conformsTo`
+* `context`
+* `name`
+* `readingOrder`
 
 In addition to this, consider the following fields as strongly recommended:
-	- `author`
-	- `readBy`
-	- `duration`
-	- `publisher`
-	- `@id`
-	- `inLanguage`
+* `author`
+* `readBy`
+* `duration`
+* `publisher`
+* `@id`
+* `inLanguage`
 
 These fields give your listeners most of the information they need about the book, without relying on external metadata, which while useful does not always give the user everything they need, and many user agents don’t display it at all.
