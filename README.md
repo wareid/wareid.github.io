@@ -6,4 +6,4 @@ All thoughts are my own.
 
 ## Posts
 
-[Best Practices Guide for Audiobooks Internal Metadata](https://wareid.github.io/posts/audiobooks_metadata.md)
+[Best Practices Guide for Audiobooks Internal Metadata](./audiobooks_metadata.html)
